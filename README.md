@@ -1,5 +1,5 @@
-# DataScienceProj
-Data Science Repo
+# Data-Science-Proj
+Basic Data Science Project
 
 This basic data science project, implemented in Python, focuses on fundamental data handling tasks. It includes steps such as data fetching, naming headers, data description, information retrieval, data downloading, data types, and finding column names.
 
