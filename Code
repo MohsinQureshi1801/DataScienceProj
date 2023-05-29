@@ -1,0 +1,25 @@
+import pandas as pd
+import  csv
+
+url = "https://people.sc.fsu.edu/~jburkardt/data/csv/addresses.csv"
+
+df = pd.read_csv(url, header= None)
+
+headers = ["F-Names","L-Names","Address","city","code","Post"]
+df.columns = headers
+data = df.tail(2)
+print(data)
+print(df.columns) # Find Column name
+print(df.dtypes) # Find data type
+#print(df.describe(include = "all")) #Descibe each columns
+#print(df[['F-Names','L-Names']].describe(include= "all")) # to Descibe Specific columns
+print(df.info()) # you can use to check your dataset is
+
+#csv	pd.read_csv()	df.to_csv()
+#json	pd.read_json()	df.to_json()
+#excel	pd.read_excel()	df.to_excel()
+#hdf	pd.read_hdf()	df.to_hdf()
+#sql	pd.read_sql()	df.to_sql()
+
+
+#data.to_csv('Employee-Data.csv') # To save Dataset
